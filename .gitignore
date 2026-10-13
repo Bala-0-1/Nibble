@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------------
+# Nibble — Kotlin/Compose Multiplatform (Android + iOS) .gitignore
+# ---------------------------------------------------------------------------
+
+# --- Gradle ---
+.gradle/
+# 'build/' matches root /build and every module (e.g. composeApp/build)
+build/
+# Keep the wrapper jar so the project stays buildable after clone
+!gradle/wrapper/gradle-wrapper.jar
+
+# --- Kotlin (daemon / KMP metadata-transform caches) ---
+.kotlin/
+
+# --- Local / machine-specific ---
+# SDK paths etc. — never commit
+local.properties
+*.hprof
+captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Android artifacts ---
+*.apk
+*.aab
+*.ap_
+*.aar
+*.dex
+
+# --- Signing / secrets ---
+*.jks
+*.keystore
+
+# --- IDE ---
+.idea/
+*.iml
+
+# --- iOS / Xcode ---
+**/xcuserdata/
+**/*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+Pods/
+*.xcuserstate
+
+# --- OS ---
+.DS_Store
+Thumbs.db
